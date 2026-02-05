@@ -39,6 +39,7 @@ let valorAtual = ""
 
 numeros.forEach(numero => {
     numero.addEventListener('click', () => {
+
         valorAtual += numero.dataset.valor
         resultadoTexto.innerText = valorAtual
     })
@@ -52,7 +53,8 @@ operacoes.forEach(operacao => {
 })
 
 btnRestaurar.addEventListener('click', () => {
-    resultadoTexto.innerText = ""
+    resultadoTexto.innerText = "0"
+    valorAtual = ""
 })
 
 btnExcluirNum.addEventListener('click', () => {
@@ -62,6 +64,6 @@ btnExcluirNum.addEventListener('click', () => {
 
 
 btnSubmit.addEventListener('click', () => {
-    resultadoTexto.innerText = eval(valorAtual)
-    valorAtual = ""
+    valorAtual = eval(valorAtual)
+    resultadoTexto.innerText = valorAtual
 })
