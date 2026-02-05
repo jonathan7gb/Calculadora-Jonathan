@@ -3,23 +3,32 @@
     --blackColor: #020617;
 }
 
+body{
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-color: var(--blackColor);
+    transition: 0.3s;
+}
+
+#calculadora.temaClaro{
+    border-color: var(--whiteColor);
+}
+
+#painelResultado.temaClaro{
+    border-color: var(--whiteColor);
+}
+
 .temaEscuro{
     background-color: var(--blackColor);
     color: var(--whiteColor);
     border-color: var(--whiteColor);
 }
 
-.temaClaro{
-    background-color: var(--whiteColor);
-    color: var(--blackColor);
-    border-color: var(--blackColor);
-}
-
 .botaoAzul{
     padding: 1rem; 
     border-radius: 0.25rem; 
     border-width: 1px; 
-    border-color: #BFDBFE; 
+    border-color: #60A5FA; 
     font-size: 1.25rem;
     line-height: 1.75rem; 
     font-weight: 700; 
