@@ -7,19 +7,116 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: 'Courier New', Courier, monospace;">
+<body style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+
     <header class="py-8 flex justify-center border-b-2">
-        <div class="flex flex-row justify-between items-center lg:min-w-[1200px]">
+        <div class="flex flex-row justify-between items-center lg:min-w-[1000px]">
             <div class="flex flex-row gap-4 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator-icon lucide-calculator"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
-                <h1 class="font-bold text-3xl">Calculadora</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator-icon lucide-calculator"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+                <h1 class="font-semibold text-3xl">Calculadora Tradicional</h1>
             </div>
             <div class="flex items-center">
                 <button>
-                    <svg  xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon-icon lucide-sun-moon"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg>
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon-icon lucide-sun-moon"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg>
                 </button>
             </div>
         </div>
     </header>
+
+    <main class="flex justify-center lg:mt-[4rem]">
+        <div class="flex flex-row justify-center items-center lg:min-w-[1000px]">
+            
+            <!-- CALCULADORA -->
+            <div class="border-2 border-slate-950 rounded p-4">
+                <!-- PAINEL DOS RESULTADOS -->
+                <div class="border-2 border-slate-950 rounded py-2 px-4">
+                    <p class="text-3xl font-semibold">0</p>
+                </div>
+
+                <!-- OPERAÇÕES -->
+                <div class="mt-4 grid lg:grid-cols-4  gap-4 ">
+                    <!-- ADIÇÃO -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    </button>
+                    <!-- SUBTRAÇÃO -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg>
+                    </button>
+                    <!-- MULTIPLICAÇÃO -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                    <!-- DIVISÃO -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-divide-icon lucide-divide"><circle cx="12" cy="6" r="1"/><line x1="5" x2="19" y1="12" y2="12"/><circle cx="12" cy="18" r="1"/></svg>
+                    </button>
+                    <!-- 1 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        1
+                    </button>
+                    <!-- 2 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        2
+                    </button>
+                    <!-- 3 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        3
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                    <!-- 4 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        4
+                    </button>
+                    <!-- 5 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        5
+                    </button>
+                    <!-- 6 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        6
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                    <!-- 7 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        7
+                    </button>
+                    <!-- 8 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        8
+                    <!-- 9 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        9
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                    <!-- 0 -->
+                    <button class="border border-slate-950 rounded p-4 font-bold text-xl">
+                        0
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                    <!-- REINICIAR CONTA -->
+                    <button class="border border-slate-950 rounded p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-iteration-cw-icon lucide-iteration-cw"><path d="M4 10a8 8 0 1 1 8 8H4"/><path d="m8 22-4-4 4-4"/></svg>
+                    </button>
+                </div>
+        </div>
+
+    </main>
 </body>
 </html>
