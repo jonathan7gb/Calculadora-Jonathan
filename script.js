@@ -60,3 +60,8 @@ btnExcluirNum.addEventListener('click', () => {
     resultadoTexto.innerText = valorAtual
 })
 
+
+btnSubmit.addEventListener('click', () => {
+    resultadoTexto.innerText = eval(valorAtual)
+    valorAtual = ""
+})
