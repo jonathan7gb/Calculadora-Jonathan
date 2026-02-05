@@ -1,0 +1,16 @@
+:root{
+    --whiteColor: #f8fafc;
+    --blackColor: #020617;
+}
+
+.temaEscuro{
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    border-color: var(--whiteColor);
+}
+
+.temaClaro{
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-color: var(--blackColor);
+}
