@@ -59,7 +59,11 @@ btnRestaurar.addEventListener('click', () => {
 
 btnExcluirNum.addEventListener('click', () => {
     valorAtual = valorAtual.slice(0, -1)
-    resultadoTexto.innerText = valorAtual
+    if(valorAtual == ""){
+        resultadoTexto.innerText = "0"
+    }else{
+        resultadoTexto.innerText = valorAtual
+    }
 })
 
 
