@@ -34,12 +34,12 @@ body{
     font-weight: 700; 
     color: #ffffff; 
     background-color: #60A5FA; 
+    transition: 0.5s;
 }
 
 .botaoAzul:hover{
     background-color: #93c5fd;
     border-color: #93c5fd;
-    transition: all 0.5s ease;
 }
 
 .botaoVerde{
@@ -48,12 +48,12 @@ body{
     border-width: 1px; 
     border-color: #4ade80; 
     background-color: #4ade80; 
+    transition: 0.5s ;
 }
 
 .botaoVerde:hover{
     background-color: #86efac;
     border-color: #86efac;
-    transition: all 0.5s ease;
 }
 
 
